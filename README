@@ -1,0 +1,44 @@
+INTRODUCTION
+
+This is an attempt to create a nicer version of the Mineshafter Squared client 
+wrapper available from [1] that is:
+
+  - Compatible with the latest versions of the official Minecraft client.  
+
+  - Compatible with the open source version of Mineshafter Squared's 
+    authentication server.
+
+To do this, the source code of MineshafterSquared-Client.jar from [1] was 
+extracted using [2] and modifications were made to MineProxy.java to allow the 
+proxy to intercept the new format of requests made by the offial Minecraft 
+client, among other changes to overcome incompatibilities between Java 7 and 
+[2].
+
+
+FILES
+
+archive/fto_client.zip              The input to the decompiler
+archive/fto_client_src.src.zip      The output of the decompiler
+
+oldjar/                             The contents of the original fto_client.jar
+
+dist/                               Files to distributed to the user
+dist/auth                           The hostname of the authentication server
+dist/fto_client.jar                 The main executable to start the client
+dist/Minecraft.jar                  Support file for fto_client.jar
+dist/Minecraft_modified.jar         Support file for fto_client.jar
+
+newsrc/                             Patched source files.
+
+newbin/                             Binaries compiled from newsrc/
+
+build.sh                            UNIX bash[3] script to update dist/
+
+README                              This file
+
+
+REFERENCES
+
+[1] https://github.com/KayoticSully/Open-Mineshafter-Squared
+[2] http://java.decompiler.free.fr
+[3] http://www.gnu.org/software/bash/
