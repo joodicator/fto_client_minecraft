@@ -22,6 +22,8 @@ archive/fto_client_src.src.zip      The output of the decompiler
 
 oldjar/                             The contents of the original fto_client.jar
 
+olddist/                            The contents of archive/fto_client.zip
+
 dist/                               Files to distributed to the user
 dist/auth                           The hostname of the authentication server
 dist/fto_client.jar                 The main executable to start the client
